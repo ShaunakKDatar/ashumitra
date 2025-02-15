@@ -1,0 +1,23 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/bootloader/esp-idf/esptool_py && /Users/shaunakdatar/.espressif/python_env/idf5.1_py3.13_env/bin/python /Users/shaunakdatar/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/bootloader/bootloader.bin
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/shaunakdatar/MARIO/firmware/components/sra-board-component/include/servo.h:30,
+                 from /Users/shaunakdatar/MARIO/firmware/components/sra-board-component/include/sra_board.h:35,
+                 from /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/main/main.c:24:
+/Users/shaunakdatar/esp/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable servo_sweep.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/servo_sweep.bin
+[9/9] cd /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/esp-idf/esptool_py && /Users/shaunakdatar/.espressif/python_env/idf5.1_py3.13_env/bin/python /Users/shaunakdatar/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/partition_table/partition-table.bin /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/servo_sweep.bin
+servo_sweep.bin binary size 0x2ce90 bytes. Smallest app partition is 0x100000 bytes. 0xd3170 bytes (82%) free.

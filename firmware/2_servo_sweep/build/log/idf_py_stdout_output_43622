@@ -1,0 +1,176 @@
+rL���[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (196) up.[0m
+[0;32mI (196) cpu_start: Starting app cpuets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7128
+load:0x40078000,len:15672
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.5-634-g39fe10677c 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb 15 2025 23:07:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09b94h ( 39828) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019bbc vaddr=3ffb0000 size=02200h (  8704) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001bdc4 vaddr=40080000 size=04254h ( 16980) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15110h ( 86288) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035138 vaddr=40084254 size=07d30h ( 32048) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu up.[0m
+[0;32mI (196) cpu_start: Starting app cpu, entry point is 0x4008110c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (213) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     servo_sweep[0m
+[0;32mI (223) cpu_start: App version:      v2.2-69-gd3b3aa3-dirty[0m
+[0;32mI (230) cpu_start: Compile time:     Feb 15 2025 23:07:08[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  456764be3c02605b...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.1.5-634-g39fe10677c[0m
+[0;32mI (248) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (257) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFB2A98 len 0002D568 (181 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008BF84 len 0001407C (80 KiB): IRAM[0m
+[0;32mI (302) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (347) main_task: Returned from app_main()[0m
+[0;32mI (347) servo: enabled servos[0m
+[0;32mI (357) servo: set servo at pin 18: 0d[0m
+[0;32mI (407) servo: set servo at pin 18: 6d[0m
+[0;32mI (457) servo: set servo at pin 18: 13d[0m
+[0;32mI (507) servo: set servo at pin 18: 19d[0m
+[0;32mI (557) servo: set servo at pin 18: 26d[0m
+[0;32mI (607) servo: set servo at pin 18: 32d[0m
+[0;32mI (657) servo: set servo at pin 18: 39d[0m
+[0;32mI (707) servo: set servo at pin 18: 45d[0m
+[0;32mI (757) servo: set servo at pin 18: 52d[0m
+[0;32mI (807) servo: set servo at pin 18: 58d[0m
+[0;32mI (857) servo: set servo at pin 18: 65d[0m
+[0;32mI (907) servo: set servo at pin 18: 65d[0m
+[0;32mI (957) servo: set servo at pin 18: 58d[0m
+[0;32mI (1007) servo: set servo at pin 18: 52d[0m
+[0;32mI (1057) servo: set servo at pin 18: 45d[0m
+[0;32mI (1107) servo: set servo at pin 18: 39d[0m
+[0;32mI (1157) servo: set servo at pin 18: 32d[0m
+[0;32mI (1207) servo: set servo at pin 18: 26d[0m
+[0;32mI (1257) servo: set servo at pin 18: 19d[0m
+[0;32mI (1307) servo: set servo at pin 18: 13d[0m
+[0;32mI (1357) servo: set servo at pin 18: 6d[0m
+[0;32mI (1407) servo: set servo at pin 18: 0d[0m
+[0;32mI (1457) servo: set servo at pin 18: 0d[0m
+[0;32mI (1507) servo: set servo at pin 18: 6d[0m
+[0;32mI (1557) servo: set servo at pin 18: 13d[0m
+[0;32mI (1607) servo: set servo at pin 18: 19d[0m
+[0;32mI (1657) servo: set servo at pin 18: 26d[0m
+[0;32mI (1707) servo: set servo at pin 18: 32d[0m
+[0;32mI (1757) servo: set servo at pin 18: 39d[0m
+[0;32mI (1807) servo: set servo at pin 18: 45d[0m
+[0;32mI (1857) servo: set servo at pin 18: 52d[0m
+[0;32mI (1907) servo: set servo at pin 18: 58d[0m
+[0;32mI (1957) servo: set servo at pin 18: 65d[0m
+[0;32mI (2007) servo: set servo at pin 18: 65d[0m
+[0;32mI (2057) servo: set servo at pin 18: 58d[0m
+[0;32mI (2107) servo: set servo at pin 18: 52d[0m
+[0;32mI (2157) servo: set servo at pin 18: 45d[0m
+[0;32mI (2207) servo: set servo at pin 18: 39d[0m
+[0;32mI (2257) servo: set servo at pin 18: 32d[0m
+[0;32mI (2307) servo: set servo at pin 18: 26d[0m
+[0;32mI (2357) servo: set servo at pin 18: 19d[0m
+[0;32mI (2407) servo: set servo at pin 18: 13d[0m
+[0;32mI (2457) servo: set servo at pin 18: 6d[0m
+[0;32mI (2507) servo: set servo at pin 18: 0d[0m
+[0;32mI (2557) servo: set servo at pin 18: 0d[0m
+[0;32mI (2607) servo: set servo at pin 18: 6d[0m
+[0;32mI (2657) servo: set servo at pin 18: 13d[0m
+[0;32mI (2707) servo: set servo at pin 18: 19d[0m
+[0;32mI (2757) servo: set servo at pin 18: 26d[0m
+[0;32mI (2807) servo: set servo at pin 18: 32d[0m
+[0;32mI (2857) servo: set servo at pin 18: 39d[0m
+[0;32mI (2907) servo: set servo at pin 18: 45d[0m
+[0;32mI (2957) servo: set servo at pin 18: 52d[0m
+[0;32mI (3007) servo: set servo at pin 18: 58d[0m
+[0;32mI (3057) servo: set servo at pin 18: 65d[0m
+[0;32mI (3107) servo: set servo at pin 18: 65d[0m
+[0;32mI (3157) servo: set servo at pin 18: 58d[0m
+[0;32mI (3207) servo: set servo at pin 18: 52d[0m
+[0;32mI (3257) servo: set servo at pin 18: 45d[0m
+[0;32mI (3307) servo: set servo at pin 18: 39d[0m
+[0;32mI (3357) servo: set servo at pin 18: 32d[0m
+[0;32mI (3407) servo: set servo at pin 18: 26d[0m
+[0;32mI (3457) servo: set servo at pin 18: 19d[0m
+[0;32mI (3507) servo: set servo at pin 18: 13d[0m
+[0;32mI (3557) servo: set servo at pin 18: 6d[0m
+[0;32mI (3607) servo: set servo at pin 18: 0d[0m
+[0;32mI (3657) servo: set servo at pin 18: 0d[0m
+[0;32mI (3707) servo: set servo at pin 18: 6d[0m
+[0;32mI (3757) servo: set servo at pin 18: 13d[0m
+[0;32mI (3807) servo: set servo at pin 18: 19d[0m
+[0;32mI (3857) servo: set servo at pin 18: 26d[0m
+[0;32mI (3907) servo: set servo at pin 18: 32d[0m
+[0;32mI (3957) servo: set servo at pin 18: 39d[0m
+[0;32mI (4007) servo: set servo at pin 18: 45d[0m
+[0;32mI (4057) servo: set servo at pin 18: 52d[0m
+[0;32mI (4107) servo: set servo at pin 18: 58d[0m
+[0;32mI (4157) servo: set servo at pin 18: 65d[0m
+[0;32mI (4207) servo: set servo at pin 18: 65d[0m
+[0;32mI (4257) servo: set servo at pin 18: 58d[0m
+[0;32mI (4307) servo: set servo at pin 18: 52d[0m
+[0;32mI (4357) servo: set servo at pin 18: 45d[0m
+[0;32mI (4407) servo: set servo at pin 18: 39d[0m
+[0;32mI (4457) servo: set servo at pin 18: 32d[0m
+[0;32mI (4507) servo: set servo at pin 18: 26d[0m
+[0;32mI (4557) servo: set servo at pin 18: 19d[0m
+[0;32mI (4607) servo: set servo at pin 18: 13d[0m
+[0;32mI (4657) servo: set servo at pin 18: 6d[0m
+[0;32mI (4707) servo: set servo at pin 18: 0d[0m
+[0;32mI (4757) servo: set servo at pin 18: 0d[0m
+[0;32mI (4807) servo: set servo at pin 18: 6d[0m
+[0;32mI (4857) servo: set servo at pin 18: 13d[0m
+[0;32mI (4907) servo: set servo at pin 18: 19d[0m
+[0;32mI (4957) servo: set servo at pin 18: 26d[0m
+[0;32mI (5007) servo: set servo at pin 18: 32d[0m
+[0;32mI (5057) servo: set servo at pin 18: 39d[0m
+[0;32mI (5107) servo: set servo at pin 18: 45d[0m
+[0;32mI (5157) servo: set servo at pin 18: 52d[0m
+[0;32mI (5207) servo: set servo at pin 18: 58d[0m
+[0;32mI (5257) servo: set servo at pin 18: 65d[0m
+[0;32mI (5307) servo: set servo at pin 18: 65d[0m
+[0;32mI (5357) servo: set servo at pin 18: 58d[0m
+[0;32mI (5407) servo: set servo at pin 18: 52d[0m
+[0;32mI (5457) servo: set servo at pin 18: 45d[0m
+[0;32mI (5507) servo: set servo at pin 18: 39d[0m
+[0;32mI (5557) servo: set servo at pin 18: 32d[0m
+[0;32mI (5607) servo: set servo at pin 18: 26d[0m
+[0;32mI (5657) servo: set servo at pin 18: 19d[0m
+[0;32mI (5707) servo: set servo at pin 18: 13d[0m
+[0;32mI (5757) servo: set servo at pin 18: 6d[0m
+[0;32mI (5807) servo: set servo at pin 18: 0d[0m
+[0;32mI (5857) servo: set servo at pin 18: 0d[0m

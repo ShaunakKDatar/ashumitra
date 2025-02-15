@@ -1,0 +1,108 @@
+;32mI (237) cpu_start: Compile time:     Feb 15 2025 23:07:08[0m
+[0;32mI (243) cpu_start: ELF file SHA256:  3fe0d2c13f03bdaf.
+[0;32mI (255) cpu_start: Min chip r�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7128
+load:0x40078000,len:15672
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.5-634-g39fe10677c 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb 15 2025 23:07:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a88ch ( 43148) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a8b4 vaddr=3ffb0000 size=02200h (  8704) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001cabc vaddr=40080000 size=0355ch ( 13660) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16df0h ( 93680) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00036e18 vaddr=4008355c size=09970h ( 39280) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x40081200[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     servo_sweep[0m
+[0;32mI (231) cpu_start: App version:      v2.2-69-gd3b3aa3-dirty[0m
+[0;32mI (237) cpu_start: Compile time:     Feb 15 2025 23:07:08[0m
+[0;32mI (243) cpu_start: ELF file SHA256:  3fe0d2c13f03bdaf...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.1.5-634-g39fe10677c[0m
+[0;32mI (255) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB2AA0 len 0002D560 (181 KiB): DRAM[0m
+[0;32mI (289) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008CECC len 00013134 (76 KiB): IRAM[0m
+[0;32mI (309) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (316) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (330) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (339) app_start: Starting scheduler on CPU0[0m
+[0;32mI (344) app_start: Starting scheduler on CPU1[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (354) main_task[0;32mI (384) servo: set servo at pin 18: 13d[0m
+[0;32mI (384) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (1404) servo: set servo at pin 18: 13d[0m
+[0;32mI (1404) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (2424) servo: set servo at pin 18: 13d[0m
+[0;32mI (2424) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (3444) servo: set servo at pin 18: 13d[0m
+[0;32mI (3444) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (4464) servo: set servo at pin 18: 13d[0m
+[0;32mI (4464) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (5484) servo: set servo at pin 18: 13d[0m
+[0;32mI (5484) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (6504) servo: set servo at pin 18: 13d[0m
+[0;32mI (6504) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (7524) servo: set servo at pin 18: 13d[0m
+[0;32mI (7524) MCPWM_SERVO_CONTROL: Servo moved to angle: 13[0m
+[0;32mI (8544) MCPWM_SERVO_CONTROL: Multiplier set to: 14[0m
+[0;33mW (8544) MCPWM_SERVO_CONTROL: Target angle exceeds maximum range. Limiting to 130.[0m
+[0;32mI (8544) servo: set servo at pin 18: 130d[0m
+[0;32mI (8554) MCPWM_SERVO_CONTROL: Servo moved to angle: 130[0m
+[0;32mI (9574) MCPWM_SERVO_CONTROL: Multiplier set to: 14[0m
+[0;33mW (9574) MCPWM_SERVO_CONTROL: Target angle exceeds maximum range. Limiting to 130.[0m
+[0;32mI (9574) servo: set servo at pin 18: 130d[0m
+[0;32mI (9584) MCPWM_SERVO_CONTROL: Servo moved to angle: 130[0m
+[0;32mI (10604) MCPWM_SERVO_CONTROL: Multiplier set to: 14[0m
+[0;33mW (10604) MCPWM_SERVO_CONTROL: Target angle exceeds maximum range. Limiting to 130.[0m
+[0;32mI (10604) servo: set servo at pin 18: 130d[0m
+[0;32mI (10614) MCPWM_SERVO_CONTROL: Servo moved to angle: 130[0m
+[0;32mI (11634) MCPWM_SERVO_CONTROL: Multiplier set to: 14[0m
+[0;33mW (11634) MCPWM_SERVO_CONTROL: Target angle exceeds maximum range. Limiting to 130.[0m
+[0;32mI (11634) servo: set servo at pin 18: 130d[0m
+[0;32mI (11644) MCPWM_SERVO_CONTROL: Servo moved to angle: 130[0m
+[0;32mI (12664) MCPWM_SERVO_CONTROL: Multiplier set to: 14[0m
+[0;33mW (12664) MCPWM_SERVO_CONTROL: Target angle exceeds maximum range. Limiting to 130.[0m
+[0;32mI (12664) servo: set servo at pin 18: 130d[0m
+[0;32mI (12674) MCPWM_SERVO_CONTROL: Servo moved to angle: 130[0m
+[0;32mI (13694) MCPWM_SERVO_CONTROL: Multiplier set to: 4[0m
+[0;32mI (13694) servo: set servo at pin 18: 52d[0m
+[0;32mI (13694) MCPWM_SERVO_CONTROL: Servo moved to angle: 52[0m
+[0;32mI (14724) MCPWM_SERVO_CONTROL: Multiplier set to: 14[0m
+[0;33mW (14724) MCPWM_SERVO_CONTROL: Target angle exceeds maximum range. Limiting to 130.[0m
+[0;32mI (14724) servo: set servo at pin 18: 130d[0m
+[0;32mI (14734) MCPWM_SERVO_CONTROL: Servo moved to angle: 130[0m
+[0;33mW (15754) MCPWM_SERVO_CONTROL: Target angle exceeds maximum range. Limiting to 130.[0m
+[0;32mI (15754) servo: set servo at pin 18: 130d[0m
+[0;32mI (15754) MCPWM_SERVO_CONTROL: Servo moved to angle: 130[0m

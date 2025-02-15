@@ -1,4 +1,4 @@
-# Install script for directory: /Users/shaunakdatar/ashumitra/firmware/components/sra-board-component
+# Install script for directory: /Users/shaunakdatar/MARIO/firmware/components/sra-board-component
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/shaunakdatar/ashumitra/firmware/2_servo_sweep/build/esp-idf/sra-board-component/install_local_manifest.txt"
+  file(WRITE "/Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/esp-idf/sra-board-component/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

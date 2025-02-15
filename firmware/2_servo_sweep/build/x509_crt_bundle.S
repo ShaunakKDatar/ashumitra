@@ -1,4 +1,4 @@
-/* * Data converted from /Users/shaunakdatar/ashumitra/firmware/2_servo_sweep/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/shaunakdatar/MARIO/firmware/2_servo_sweep/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
