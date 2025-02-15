@@ -1,0 +1,32 @@
+CMake Deprecation Warning at CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+Compiler supported targets: xtensa-esp32-elf
+
+CMake Deprecation Warning at /Users/shaunakdatar/esp/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:21 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+Cloning into 'src/ament_cmake'...
+Cloning into 'src/ament_lint'...
+Cloning into 'src/ament_package'...
+Cloning into 'src/googletest'...
+Cloning into 'src/ament_cmake_ros'...
+Cloning into 'src/ament_index'...
+/bin/sh: colcon: command not found
+make: *** [/Users/shaunakdatar/ashumitra/firmware/components/micro_ros_espidf_component/micro_ros_dev/install] Error 127
+CMake Error at /Users/shaunakdatar/ashumitra/firmware/components/micro_ros_espidf_component/CMakeLists.txt:77 (message):
+  FAILED: 2
+
+
