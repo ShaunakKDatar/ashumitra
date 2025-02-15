@@ -1,0 +1,2 @@
+source /home/lazybanana/ashumitra/ashu-firm/build/bootloader/gdbinit/symbols
+source /home/lazybanana/ashumitra/ashu-firm/build/bootloader/gdbinit/connect
