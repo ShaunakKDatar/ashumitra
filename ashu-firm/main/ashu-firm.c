@@ -6,7 +6,7 @@
 
 // Define GPIO pins
 #define IR_GPIO GPIO_NUM_4     // IR sensor output pin
-#define SERVO_GPIO GPIO_NUM_15 // Servo signal pin
+#define SERVO_GPIO GPIO_NUM_18 // Servo signal pin
 
 // LEDC (PWM) configuration for servo
 #define LEDC_TIMER LEDC_TIMER_0

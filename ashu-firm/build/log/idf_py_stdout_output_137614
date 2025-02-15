@@ -10,7 +10,7 @@ load:0x40080400,len:4
 load:0x40080404,len:3904
 entry 0x40080640
 [0;32mI (29) boot: ESP-IDF v5.2.3-942-gb0f63c505b 2nd stage bootloader[0m
-[0;32mI (29) boot: compile time Feb 15 2025 22:50:15[0m
+[0;32mI (29) boot: compile time Feb 16 2025 00:27:34[0m
 [0;32mI (31) boot: Multicore bootloader[0m
 [0;32mI (35) boot: chip revision: v3.1[0m
 [0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
@@ -35,9 +35,9 @@ entry 0x40080640
 [0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
 [0;32mI (205) cpu_start: Application information:[0m
 [0;32mI (208) cpu_start: Project name:     ashu-firm[0m
-[0;32mI (213) cpu_start: App version:      f8c141c-dirty[0m
-[0;32mI (219) cpu_start: Compile time:     Feb 15 2025 22:50:09[0m
-[0;32mI (225) cpu_start: ELF file SHA256:  0841482e1...[0m
+[0;32mI (213) cpu_start: App version:      f3fe1c3-dirty[0m
+[0;32mI (219) cpu_start: Compile time:     Feb 16 2025 00:27:25[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  4cc000892...[0m
 [0;32mI (230) cpu_start: ESP-IDF:          v5.2.3-942-gb0f63c505b[0m
 [0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
 [0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
@@ -73,29 +73,6 @@ No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
 Object detected! Rotating servo...
 Object detected! Rotating servo...
 Object detected! Rotating servo...
@@ -113,32 +90,6 @@ No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-Object detected! Rotating servo...
 Object detected! Rotating servo...
 Object detected! Rotating servo...
 Object detected! Rotating servo...
@@ -184,26 +135,6 @@ No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-No object detected. Servo stopped.
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-No object detected. Servo stopped.
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
-Object detected! Rotating servo...
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
@@ -222,6 +153,40 @@ No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
@@ -252,6 +217,101 @@ No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+No object detected. Servo stopped.
+Object detected! Rotating servo...
+Object detected! Rotating servo...
+Object detected! Rotating servo...
 No object detected. Servo stopped.
 No object detected. Servo stopped.
 No object detected. Servo stopped.

@@ -1,4 +1,4 @@
-/* * Data converted from /home/lazybanana/ashumitra/ashu-firm/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/lazybanana/Documents/bakchodi/ashumitra/ashu-firm/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

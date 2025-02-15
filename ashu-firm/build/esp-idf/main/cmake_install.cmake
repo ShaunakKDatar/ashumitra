@@ -1,4 +1,4 @@
-# Install script for directory: /home/lazybanana/ashumitra/ashu-firm/main
+# Install script for directory: /home/lazybanana/Documents/bakchodi/ashumitra/ashu-firm/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
