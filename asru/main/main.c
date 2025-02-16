@@ -13,6 +13,8 @@
 #include "sra_board.h"
 
 
+static bool pill_eaten = false;
+
 #include "sra_board.h"
 
 // Remove or comment out this line since it conflicts with the later TAG definition
@@ -193,14 +195,24 @@ static esp_err_t deploy_post_handler(httpd_req_t *req) {
         ESP_LOGI(TAG, "Deploying medicine from box: %d", current_med_box);
 
         // More comprehensive servo movement
-        ESP_LOGI(TAG, "REEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+        ESP_LOGI(TAG, "giving drive to the servo");
         set_angle_servo(&servo_d, current_med_box*13);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
         ESP_LOGI(TAG, "IT IS DONE SIR");
-        httpd_resp_set_type(req, "application/json");
-        char resp[64];
-        snprintf(resp, sizeof(resp), "{\"status\":\"success\",\"med_box\":%d}", current_med_box);
-        httpd_resp_send(req, resp, strlen(resp));
+
+        if(gpio_get_level(5) == 0) {
+            ESP_LOGI(TAG, "dispatching meds");
+            pill_eaten = false;
+
+            // First dispense the pill
+            set_angle_servo(&servo_c, -90);
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
+            set_angle_servo(&servo_c, 0);
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
+        } else {
+            ESP_LOGI(TAG, "IR sensor not triggered");
+        }
+
     } else {
         httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid box number");
     }
@@ -306,13 +318,24 @@ void app_main(void) {
     }
     ESP_LOGI(TAG, "Servo initialized successfully");
 
-    // Test servo movement immediately after initialization
-    ESP_LOGI(TAG, "Testing servo movement...");
-    set_angle_servo(&servo_d, 0);    // Move to 0 degrees
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-    set_angle_servo(&servo_d, 90);   // Move to 90 degrees
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-    
+    // Configure GPIO pin
+    gpio_config_t io_conf = {
+        .pin_bit_mask = (1ULL << 5),  // Bit mask for GPIO 5
+        .mode = GPIO_MODE_INPUT,                   // Set as input mode
+        .pull_up_en = GPIO_PULLUP_ENABLE,         // Enable internal pull-up
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,    // Disable pull-down
+        .intr_type = GPIO_INTR_DISABLE            // Disable interrupt
+    };
+    gpio_config(&io_conf);
+
+
+    // // Test servo movement immediately after initialization
+    // ESP_LOGI(TAG, "Testing servo movement...");
+    // set_angle_servo(&servo_c, -90);    // Move to 0 degrees
+    // vTaskDelay(1000 / portTICK_PERIOD_MS);
+    // set_angle_servo(&servo_c, 0);   // Move to 90 degrees
+    // vTaskDelay(1000 /portTICK_PERIOD_MS);
+
     // Initialize NVS
     ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
