@@ -85,10 +85,10 @@ static void mcpwm_servo_control(void *arg)
 		// 	set_angle_servo(&servo_d, i);
 		// 	vTaskDelay(1000/ portTICK_PERIOD_MS);
 		// }
-    set_angle_servo(&servo_c, 0);
-    set_angle_servo(&servo_c, 0);
-    set_angle_servo(&servo_c, 0);
-    set_angle_servo(&servo_c, 0);
+    set_angle_servo(&servo_c, 70);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+	set_angle_servo(&servo_c, 0);
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }
 

@@ -197,6 +197,7 @@ static esp_err_t deploy_post_handler(httpd_req_t *req) {
         // More comprehensive servo movement
         ESP_LOGI(TAG, "giving drive to the servo");
         set_angle_servo(&servo_d, current_med_box*13);
+        set_angle_servo(&servo_c, 0);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
         ESP_LOGI(TAG, "IT IS DONE SIR");
 
@@ -205,9 +206,9 @@ static esp_err_t deploy_post_handler(httpd_req_t *req) {
             pill_eaten = false;
 
             // First dispense the pill
-            set_angle_servo(&servo_c, -90);
-            vTaskDelay(1000 / portTICK_PERIOD_MS);
             set_angle_servo(&servo_c, 0);
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
+            set_angle_servo(&servo_c, 80);
             vTaskDelay(1000 / portTICK_PERIOD_MS);
         } else {
             ESP_LOGI(TAG, "IR sensor not triggered");

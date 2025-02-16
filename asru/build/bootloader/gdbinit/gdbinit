@@ -1,0 +1,2 @@
+source /home/lazybanana/ashumitra/asru/build/bootloader/gdbinit/symbols
+source /home/lazybanana/ashumitra/asru/build/bootloader/gdbinit/connect

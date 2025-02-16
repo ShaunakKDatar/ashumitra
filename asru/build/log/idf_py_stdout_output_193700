@@ -1,0 +1,62 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/lazybanana/ashumitra/asru/build/bootloader/esp-idf/esptool_py && /home/lazybanana/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/lazybanana/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/lazybanana/ashumitra/asru/build/bootloader/bootloader.bin
+Bootloader binary size 0x6890 bytes. 0x770 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/motor.c.obj
+In file included from /home/lazybanana/ashumitra/asru/components/sra-board-component/include/servo.h:30,
+                 from /home/lazybanana/ashumitra/asru/components/sra-board-component/include/sra_board.h:35,
+                 from /home/lazybanana/ashumitra/asru/main/motor.c:24:
+/home/lazybanana/esp/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable asru.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/lazybanana/ashumitra/asru/build/asru.bin
+[7/8] cd /home/lazybanana/ashumitra/asru/build/esp-idf/esptool_py && /home/lazybanana/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/lazybanana/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lazybanana/ashumitra/asru/build/partition_table/partition-table.bin /home/lazybanana/ashumitra/asru/build/asru.bin
+asru.bin binary size 0x2d630 bytes. Smallest app partition is 0x100000 bytes. 0xd29d0 bytes (82%) free.
+[7/8] cd /home/lazybanana/esp/esp-idf/components/esptool_py && /usr/local/bin/cmake -D IDF_PATH=/home/lazybanana/esp/esp-idf -D "SERIAL_TOOL=/home/lazybanana/.espressif/python_env/idf5.2_py3.11_env/bin/python;;/home/lazybanana/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/lazybanana/ashumitra/asru/build -P /home/lazybanana/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 asru.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a0:a3:b3:90:88:0c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003dfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26768 bytes to 16396...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000788b... (100 %)
+Wrote 26768 bytes (16396 compressed) at 0x00001000 in 0.8 seconds (effective 282.0 kbit/s)...
+Hash of data verified.
+Compressed 185904 bytes to 99356...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001c79d... (28 %)
+Writing at 0x0002219a... (42 %)
+Writing at 0x00027f5c... (57 %)
+Writing at 0x0002f700... (71 %)
+Writing at 0x00036a17... (85 %)
+Writing at 0x0003cf6b... (100 %)
+Wrote 185904 bytes (99356 compressed) at 0x00010000 in 2.8 seconds (effective 534.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 396.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

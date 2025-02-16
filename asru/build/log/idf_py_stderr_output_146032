@@ -1,0 +1,38 @@
+CMake Error at /home/lazybanana/esp/esp-idf/tools/cmake/component.cmake:228 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 106
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    /home/lazybanana/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Error at
+  /home/lazybanana/ashumitra/asru/components/sra-board-component/CMakeLists.txt:1
+  (cmake_minimum_required):
+
+    CMake 3.22 or higher is required.  You are running version 3.21.1
+
+  Call Stack (most recent call first):
+
+    /home/lazybanana/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:107 (include)
+    /home/lazybanana/esp/esp-idf/tools/cmake/scripts/component_get_requirements.cmake:160 (__component_get_requirements)
+
+  
+
+  
+
+Call Stack (most recent call first):
+  /home/lazybanana/esp/esp-idf/tools/cmake/build.cmake:606 (__component_get_requirements)
+  /home/lazybanana/esp/esp-idf/tools/cmake/project.cmake:612 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+

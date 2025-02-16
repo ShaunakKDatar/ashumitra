@@ -1,0 +1,73 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008438a: esp_crosscore_isr at /home/lazybanana/esp/esp-idf/components/esp_system/crosscore_int.c:103
+0x40082ff9: _xt_lowint1 at /home/lazybanana/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4cd1: uart_tx_char at /home/lazybanana/esp/esp-idf/components/vfs/vfs_uart.c:183
+0x400d54fb: uart_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs_uart.c:238
+0x400d4283: console_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d3e0e: esp_vfs_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d9855: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400dd78f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dd152: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400d98fd: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4dfd: esp_log_writev at /home/lazybanana/esp/esp-idf/components/log/log.c:212
+0x4008ade5: esp_log_write at /home/lazybanana/esp/esp-idf/components/log/log.c:222
+0x400d5585: set_angle_servo_helper at /home/lazybanana/ashumitra/asru/components/sra-board-component/src/servo.c:80 (discriminator 1)
+0x400d56dd: set_angle_servo at /home/lazybanana/ashumitra/asru/components/sra-board-component/src/servo.c:97
+0x400d5527: mcpwm_servo_control at /home/lazybanana/ashumitra/asru/main/motor.c:88 (discriminator 1)
+0x40086179: vPortTaskWrapper at /home/lazybanana/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4008438a: esp_crosscore_isr at /home/lazybanana/esp/esp-idf/components/esp_system/crosscore_int.c:103
+0x40082ff9: _xt_lowint1 at /home/lazybanana/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4cdb: uart_ll_get_txfifo_len at /home/lazybanana/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at /home/lazybanana/esp/esp-idf/components/vfs/vfs_uart.c:185
+0x400d54fb: uart_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs_uart.c:238
+0x400d4283: console_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d3e0e: esp_vfs_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d9855: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400dd78f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dd152: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400d98fd: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4dfd: esp_log_writev at /home/lazybanana/esp/esp-idf/components/log/log.c:212
+0x4008ade5: esp_log_write at /home/lazybanana/esp/esp-idf/components/log/log.c:222
+0x400d5585: set_angle_servo_helper at /home/lazybanana/ashumitra/asru/components/sra-board-component/src/servo.c:80 (discriminator 1)
+0x400d56dd: set_angle_servo at /home/lazybanana/ashumitra/asru/components/sra-board-component/src/servo.c:97
+0x400d5527: mcpwm_servo_control at /home/lazybanana/ashumitra/asru/main/motor.c:88 (discriminator 1)
+0x40086179: vPortTaskWrapper at /home/lazybanana/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x4008438a: esp_crosscore_isr at /home/lazybanana/esp/esp-idf/components/esp_system/crosscore_int.c:103
+0x40082ff9: _xt_lowint1 at /home/lazybanana/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4cdb: uart_ll_get_txfifo_len at /home/lazybanana/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at /home/lazybanana/esp/esp-idf/components/vfs/vfs_uart.c:185
+0x400d54fb: uart_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs_uart.c:238
+0x400d4283: console_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d3e0e: esp_vfs_write at /home/lazybanana/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d9855: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400dd78f: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dd152: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400d98fd: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4dfd: esp_log_writev at /home/lazybanana/esp/esp-idf/components/log/log.c:212
+0x4008ade5: esp_log_write at /home/lazybanana/esp/esp-idf/components/log/log.c:222
+0x400d5585: set_angle_servo_helper at /home/lazybanana/ashumitra/asru/components/sra-board-component/src/servo.c:80 (discriminator 1)
+0x400d56dd: set_angle_servo at /home/lazybanana/ashumitra/asru/components/sra-board-component/src/servo.c:97
+0x400d5527: mcpwm_servo_control at /home/lazybanana/ashumitra/asru/main/motor.c:88 (discriminator 1)
+0x40086179: vPortTaskWrapper at /home/lazybanana/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m
